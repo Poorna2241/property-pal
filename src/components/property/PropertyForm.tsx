@@ -110,7 +110,18 @@ export function PropertyForm({ property, onSuccess }: PropertyFormProps) {
         await updateProperty.mutateAsync({ id: property.id, ...data });
       } else {
         const result = await createProperty.mutateAsync({
-          ...data,
+          title: data.title,
+          description: data.description,
+          price: data.price,
+          property_type: data.property_type,
+          bedrooms: data.bedrooms,
+          bathrooms: data.bathrooms,
+          area_sqft: data.area_sqft,
+          address: data.address,
+          city: data.city,
+          state: data.state,
+          country: data.country,
+          zip_code: data.zip_code,
           seller_id: user.id,
           status: 'active',
         });
