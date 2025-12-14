@@ -50,6 +50,7 @@ export type Database = {
           bathrooms: number | null
           bedrooms: number | null
           city: string
+          contact_number: string | null
           country: string | null
           created_at: string | null
           description: string | null
@@ -71,6 +72,7 @@ export type Database = {
           bathrooms?: number | null
           bedrooms?: number | null
           city: string
+          contact_number?: string | null
           country?: string | null
           created_at?: string | null
           description?: string | null
@@ -92,6 +94,7 @@ export type Database = {
           bathrooms?: number | null
           bedrooms?: number | null
           city?: string
+          contact_number?: string | null
           country?: string | null
           created_at?: string | null
           description?: string | null

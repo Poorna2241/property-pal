@@ -27,6 +27,7 @@ const propertySchema = z.object({
   state: z.string().max(100).optional(),
   country: z.string().max(100).optional(),
   zip_code: z.string().max(20).optional(),
+  contact_number: z.string().min(10, 'Contact number must be at least 10 digits').max(20).optional(),
 });
 
 type PropertyFormData = z.infer<typeof propertySchema>;
@@ -60,6 +61,7 @@ export function PropertyForm({ property, onSuccess }: PropertyFormProps) {
       state: property?.state || '',
       country: property?.country || 'USA',
       zip_code: property?.zip_code || '',
+      contact_number: property?.contact_number || '',
     },
   });
 
@@ -122,6 +124,7 @@ export function PropertyForm({ property, onSuccess }: PropertyFormProps) {
           state: data.state,
           country: data.country,
           zip_code: data.zip_code,
+          contact_number: data.contact_number,
           seller_id: user.id,
           status: 'active',
         });
@@ -328,6 +331,20 @@ export function PropertyForm({ property, onSuccess }: PropertyFormProps) {
             )}
           />
         </div>
+
+        <FormField
+          control={form.control}
+          name="contact_number"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Contact Number</FormLabel>
+              <FormControl>
+                <Input {...field} placeholder="+1 (555) 123-4567" className="bg-card border-border" />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
 
         {!property && (
           <div className="space-y-2">
