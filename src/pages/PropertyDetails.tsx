@@ -135,7 +135,7 @@ export default function PropertyDetails() {
                 </p>
               </div>
 
-              <div className="flex items-center gap-6 py-4 border-y border-border">
+              <div className="flex flex-wrap items-center gap-6 py-4 border-y border-border">
                 {property.bedrooms && (
                   <div className="flex items-center gap-2">
                     <Bed className="w-5 h-5 text-primary" />
@@ -152,6 +152,12 @@ export default function PropertyDetails() {
                   <div className="flex items-center gap-2">
                     <Square className="w-5 h-5 text-primary" />
                     <span>{property.area_sqft.toLocaleString()} sqft</span>
+                  </div>
+                )}
+                {property.contact_number && (
+                  <div className="flex items-center gap-2">
+                    <Phone className="w-5 h-5 text-primary" />
+                    <span>Contact: {property.contact_number}</span>
                   </div>
                 )}
               </div>
