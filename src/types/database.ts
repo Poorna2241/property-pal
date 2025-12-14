@@ -34,6 +34,7 @@ export interface Property {
   state: string | null;
   country: string;
   zip_code: string | null;
+  contact_number: string | null;
   latitude: number | null;
   longitude: number | null;
   created_at: string;
