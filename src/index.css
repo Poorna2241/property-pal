@@ -10,10 +10,10 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
+    --background: 210 30% 96%;
     --foreground: 222 47% 11%;
 
-    --card: 0 0% 100%;
+    --card: 0 0% 99%;
     --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
@@ -88,6 +88,7 @@
     --sidebar-border: 217 33% 17%;
     --sidebar-ring: 217 91% 60%;
   }
+
 }
 
 @layer base {
@@ -129,7 +130,7 @@
 
   .hover-lift:hover {
     @apply -translate-y-1;
-    box-shadow: 0 20px 40px -15px hsl(217 91% 60% / 0.25);
+    box-shadow: 0 20px 40px -15px hsla(217, 42%, 65%, 0.25);
   }
 
   /* Glow effects */

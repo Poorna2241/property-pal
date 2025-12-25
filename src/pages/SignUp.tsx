@@ -65,6 +65,8 @@ export default function SignUp() {
       let message = error.message;
       if (error.message.includes('already registered')) {
         message = 'This email is already registered. Please sign in instead.';
+      } else if (/confirmation|smtp|mail|email/i.test(error.message)) {
+        message = 'Sign up failed: email not sent. Check Supabase Auth → Email (disable custom SMTP or configure it) and Auth → URL Configuration (add your dev URL).';
       }
       toast({
         title: 'Sign up failed',
