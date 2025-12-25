@@ -64,77 +64,70 @@ const Index = () => {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-border py-8 mt-16">
-        {/* <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>© 2025 PropMarket. All rights reserved.</p>
-        </div> */}
 
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* About Section */}
-          <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <Home className="w-6 h-6 text-blue-500" />
-              <span className="text-xl font-bold text-white">PropMarket</span>
-            </div>
-            <p className="text-sm text-gray-400 mb-4">
-              Your trusted platform for buying, selling, and discovering properties. 
-              Find your dream home with ease.
-            </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-blue-500 transition">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-blue-500 transition">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-pink-500 transition">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-blue-500 transition">
-                <Linkedin className="w-5 h-5" />
-              </a>
-            </div>
-          </div>
-
-         
-
-   
-
-          {/* Contact */}
-          <div>
-            <h3 className="text-white font-semibold mb-4">Contact Us</h3>
-            <ul className="space-y-3">
-              <li className="flex items-center space-x-2 text-sm">
-                <Mail className="w-4 h-4 text-blue-500" />
-                <a href="mailto:info@propmarket.com" className="hover:text-blue-500 transition">
-                  info@propmarket.com
-                </a>
-              </li>
-              <li className="flex items-center space-x-2 text-sm">
-                <Phone className="w-4 h-4 text-blue-500" />
-                <a href="tel:+94234567890" className="hover:text-blue-500 transition">
-                  +94 (234) 567-890
-                </a>
-              </li>
-              <li className="text-sm text-gray-400">
-                123 <br />
-                Colombo, 10001<br />
-                Sri Lanka
-              </li>
-            </ul>
-          </div>
+      <footer className="border-t border-border py-8 mt-16 bg-gray-900">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="flex flex-col md:flex-row justify-between items-start gap-8">
+      {/* About Section - Left */}
+      <div className="w-full md:w-auto">
+        <div className="flex items-center space-x-2 mb-4">
+          <Home className="w-6 h-6 text-blue-500" />
+          <span className="text-xl font-bold text-white">PropMarket</span>
         </div>
-
-        {/* Bottom Bar */}
-        <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-gray-400">
-            © {currentYear} PropMarket. All rights reserved.
-          </p>
-
+        <p className="text-sm text-gray-400 mb-4 max-w-sm">
+          Your trusted platform for buying, selling, and discovering properties. 
+          Find your dream home with ease.
+        </p>
+        <div className="flex space-x-4">
+          <a href="#" className="text-gray-400 hover:text-blue-500 transition">
+            <Facebook className="w-5 h-5" />
+          </a>
+          <a href="#" className="text-gray-400 hover:text-blue-500 transition">
+            <Twitter className="w-5 h-5" />
+          </a>
+          <a href="#" className="text-gray-400 hover:text-pink-500 transition">
+            <Instagram className="w-5 h-5" />
+          </a>
+          <a href="#" className="text-gray-400 hover:text-blue-500 transition">
+            <Linkedin className="w-5 h-5" />
+          </a>
         </div>
       </div>
-      </footer>
+     
+      {/* Contact - Right */}
+      <div className="w-full md:w-auto">
+        <h3 className="text-white font-semibold mb-4">Contact Us</h3>
+        <ul className="space-y-3">
+          <li className="flex items-center space-x-2 text-sm text-gray-400">
+            <Mail className="w-4 h-4 text-blue-500" />
+            <a href="mailto:info@propmarket.com" className="hover:text-blue-500 transition">
+              info@propmarket.com
+            </a>
+          </li>
+          <li className="flex items-center space-x-2 text-sm text-gray-400">
+            <Phone className="w-4 h-4 text-blue-500" />
+            <a href="tel:+94234567890" className="hover:text-blue-500 transition">
+              +94 (234) 567-890
+            </a>
+          </li>
+          <li className="text-sm text-gray-400">
+            123 Main Street<br />
+            Colombo, 10001<br />
+            Sri Lanka
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Bottom Bar */}
+    <div className="border-t border-gray-800 mt-8 pt-8">
+      <p className="text-sm text-gray-400 text-center">
+        © {currentYear} PropMarket. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
     </div>
   );
 };
