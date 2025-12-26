@@ -79,16 +79,16 @@ const Index = () => {
           Find your dream home with ease.
         </p>
         <div className="flex space-x-4">
-          <a href="#" className="text-gray-400 hover:text-blue-500 transition">
+          <a href="www.facebook.com" className="text-gray-400 hover:text-blue-500 transition">
             <Facebook className="w-5 h-5" />
           </a>
-          <a href="#" className="text-gray-400 hover:text-blue-500 transition">
+          <a href="www.x.com" className="text-gray-400 hover:text-blue-500 transition">
             <Twitter className="w-5 h-5" />
           </a>
-          <a href="#" className="text-gray-400 hover:text-pink-500 transition">
+          <a href="www.instagram.com" className="text-gray-400 hover:text-pink-500 transition">
             <Instagram className="w-5 h-5" />
           </a>
-          <a href="#" className="text-gray-400 hover:text-blue-500 transition">
+          <a href="www.linkedin.com" className="text-gray-400 hover:text-blue-500 transition">
             <Linkedin className="w-5 h-5" />
           </a>
         </div>
